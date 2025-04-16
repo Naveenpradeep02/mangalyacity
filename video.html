@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .video-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-container">
+        <video id="video" width="600" controls autoplay>
+            <source src="./Images/MANGALYA final.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="mt-4">
+            <button onclick="window.location.href='index.html'" style="background-color:#FE8C4D;" class="text-white px-4 py-2 rounded">Back</button>
+        </div>
+    </div>
+
+</body>
+</html>
